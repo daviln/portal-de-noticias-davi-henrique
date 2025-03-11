@@ -9,10 +9,9 @@ body {background-color: whitesmoke;}
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(193, 200, 241);
-    
+    background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));
 }
 
 .titulo-news {
@@ -25,13 +24,115 @@ header {
     background-size: cover;
     /* background-position: center; */
     background-clip: text;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     color: transparent;
     
 }
 
 .logo {
-    width: 15%;
-    height: 15%;
+    height: 100px;
     margin-right: 10px;
 } 
+
+#subcabeçalho {
+    background: linear-gradient(135deg, rgb(70, 90, 150), rgb(100, 120, 180));
+    color: rgb(226, 225, 225);
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(200, 220, 255); /* Um azul bem claro */
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    display: inline-block;
+    transition: color 0.5s ease, transform 0.5s ease;
+    padding: 3px;
+}
+
+nav ul li a:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+#noticias {
+    background-color: blue;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+
+.conteudo-noticia {
+    margin-left: 20px;
+}
+
+aside {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#equipe {
+    background-color: blue;
+    margin-top: 50px;
+    display: flex;
+    overflow-x: auto;
+    /* padding: 20px; */
+    gap: 20px;
+
+}
+
+#equipe h2{
+    margin-left: 20px; 
+}
+
+.membros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.membros img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#redes {
+    background-color: blue;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sociais {
+    color: whitesmoke;
+    padding: 10px 30px;
+}
+
+footer {
+    background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
