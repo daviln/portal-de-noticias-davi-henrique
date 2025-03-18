@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hubs News</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c6d289014.js" crossorigin="anonymous" ></script>
 </head>
 
 <body>
@@ -23,26 +24,63 @@
             </ul>
         </nav>
     </section>
-    <section id="noticias">
-        <article class="conteudo-noticia">Notícia 1
-            <h4> Título 1 </h4>
-            <p>Descrição notícia</p>
-        </article>
-        <article class="conteudo-noticia">Notícia 2
-            <h4> Título 1 </h4>
-            <p>Descrição notícia</p>
-        </article>
-        <article class="conteudo-noticia">Notícia 3
-            <h4> Título 1 </h4>
-            <p>Descrição notícia</p>
-        </article>
-        <aside class="linkedin">Links/post Linkedin
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </aside>
-    </section>
+    <div class="container">
+        <section id="noticias">
+            <article class="conteudo-noticia">
+                <h5 class="nome-noticia">Notícia 1</h5>
+                <h3 class="titulo-noticia"> Título 1 </h3>
+                <p class="descricao-noticia">Descrição notícia</p>
+            </article>
+            <article class="conteudo-noticia">
+                <h5 class="nome-noticia">Notícia 2</h5>
+                <h3 class="titulo-noticia"> Título 2 </h3>
+                <p class="descricao-noticia">Descrição notícia</p>
+            </article>
+            <article class="conteudo-noticia">
+                <h5 class="nome-noticia">Notícia 3</h5>
+                <h3 class="titulo-noticia
+                "> Título 3 </h3>
+                <p class="descricao-noticia">Descrição notícia</p>
+            </article>
+            <aside class="linkedin">Links/post Linkedin
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </aside>
+        </section>
+    </div>
+    <div class="texto-box"><h3>Startups selecionadas / 2025.1</h3></div>
+    <div class="pitch-box">
+        <div class="card">
+            <div class="image-box">
+                <img src="./assets/startup2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>SambaPass</h2>
+                <p>A Startup que te proporciona experiências únicas no mundo das melhores festas.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="./assets/startup1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Espaço Abra</h2>
+                <p>O psiquiatra certo pra você, a um clique de distância.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="./assets/startup3.png" alt="">
+            </div>
+            <div class="content">
+                <h2>GEra</h2>
+                <p>Onde envelhecer se torna viver.</p>
+            </div>
+        </div>
+    </div>
+    <div class="titulo-equipe"><h3>Equipe</h3></div>
     <section id="equipe">
         <div class="membros">
             <img src="./assets/edes.jpeg" alt="Edes">
@@ -82,15 +120,43 @@
         </div>      
     </section>
     <section id="redes">
-        <a href="" class="sociais">Linkedin</a>
-        <a href="" class="sociais">Instagram</a>
-        <a href="" class="sociais">Whatsapp</a>
+        <a href="" class="sociais">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span class="tooltip tooltip-linkedin">LinkedIn</span>
+        </a>
+        <a href="" class="sociais">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="tooltip tooltip-whatsapp">Whatsapp</span>
+        </a>
+        <a href="" class="sociais">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="tooltip tooltip-instagram">Instagram</span>
+        </a>
+        <a href="" class="sociais">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="tooltip tooltip-email">Email</span>
+        </a>
     </section>
-    <footer>&copy;Davi e Henrique
-        <a href="">Linkedin Davi</a>
-        <a href="">Linkedin Henrique</a>
-        <a href="">Whatsapp Davi</a>
-        <a href="">Whatsapp Henrique</a>
+    <footer>&copy;<i>Davi e Henrique</i>
+        <div class="links">
+            <a href="" class="sociais">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="tooltip tooltip-whatsapp">Davi</span>
+            </a>
+            <a href="" class="sociais">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span class="tooltip tooltip-linkedin">Davi</span>
+            </a>
+            <a href="" class="sociais">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="tooltip tooltip-whatsapp">Henrique</span>
+            </a>
+            <a href="" class="sociais">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span class="tooltip tooltip-linkedin">Henrique</span>
+            </a>
+            
+        </div>
     </footer>
 </body>
 </html>
