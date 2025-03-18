@@ -13,6 +13,12 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +47,11 @@ header {
     background: linear-gradient(135deg, rgb(70, 90, 150), rgb(100, 120, 180));
     /* color: rgb(226, 225, 225); */
     padding: 5px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 nav ul {
@@ -79,10 +90,11 @@ nav ul li a:hover {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    /* padding-top: 250px; */
 }
 
 #noticias {
-    margin-top: 80px;
+    margin-top: 250px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns:repeat(5, 1fr);
@@ -93,8 +105,13 @@ nav ul li a:hover {
     gap: 15px;
     background-image: url(./assets/logo.png);
     background-repeat: no-repeat;
-    background-position-y: 150px;
-    background-position-x: 230px;
+    background-position: 30% 140%;
+}
+
+@media (max-width: 768px) {
+    #noticias {
+        background-position: 20% 100%;
+    }
 }
 
 .conteudo-noticia {
@@ -261,7 +278,7 @@ nav ul li a:hover {
 .content {
     width: 80%;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -275,7 +292,7 @@ nav ul li a:hover {
 }
 
 .card:nth-child(3) .content {
-    color: rgb(92, 92, 195);
+    color: rgb(48, 48, 110);
 }
 
 
@@ -289,7 +306,7 @@ nav ul li a:hover {
 
 }
 
-#equipe {
+#startups {
     background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));
     margin-top: 10px;
     display: flex;
@@ -325,8 +342,35 @@ nav ul li a:hover {
     transform: scale(1.08);
 }
 
+#equipe {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+section div img {
+    width: 300px;
+    border-radius: 12px;
+}
+
+.edes-gisele h2, p {
+    text-align: center;
+}
+
+.edes-gisele {
+    background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));
+    border-radius: 12px;
+    padding: 30px;
+
+}
+
+
+
+
+
 #redes {
-    background: linear-gradient(135deg, rgb(70, 90, 150), rgb(100, 120, 180));
+    /* background: linear-gradient(135deg, rgb(70, 90, 150), rgb(100, 120, 180)); */
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -426,6 +470,19 @@ footer {
     color: black;
     padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-esquerda {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.imagem-footer {
+    width: 120px;
+
 }
 
 .links {
