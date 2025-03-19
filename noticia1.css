@@ -10,6 +10,13 @@ body {
     background-color: whitesmoke;
     width: 100vw;
     height: 100vh;
+    padding: 0;
+    color: #333;
+    line-height:1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding-top: 100px;
+
 }
 
 header {
@@ -43,51 +50,57 @@ header {
     margin-right: 10px;
 } 
 
-#subcabeçalho {
-    background: linear-gradient(135deg, rgb(70, 90, 150), rgb(100, 120, 180));
-    /* color: rgb(226, 225, 225); */
-    padding: 5px;
-    position: fixed;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    z-index: 999;
+h1,h2,h3 {
+    font-family: 'Merriweather',serif;
+    font-weight: bold;
+    color: #333;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    width: 100%;
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+a {
     text-decoration: none;
-    color: rgb(200, 220, 255); 
-    font-size: 18px;
-    font-weight: 500;
-    font-style: italic;
-    display: inline-block;
-    transition: color 0.5s ease, transform 0.5s ease;
-    padding: 3px;
+    color: #007BFF;
+    transition: color 0.3 ease;
 }
 
-nav ul li a:hover {
-    transform: scale(1.05);
-    text-decoration: wavy;
+a:hover {
+    color: #0056b3;
 }
 
+section, article {
+    padding: 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    box-shadow: 0 4px rgba (0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
 
+.imagem-principal img, .imagem-secundaria img, .imagem-futuro img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba (0,0,0,0.1);
+    margin-top: 1.5 rem;
+    margin-bottom: 2rem;
+}
 
+.conteudo {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+}
 
-
+.conteudo h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    color: #333;
+}
 
 
 
@@ -197,6 +210,10 @@ footer {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    border-top: 2px solid #ccc;
+    bottom: 0;
+    width: 100%;
+    position: relative;
 }
 
 .footer-esquerda {
@@ -207,6 +224,8 @@ footer {
 
 .imagem-footer {
     width: 120px;
+    max-width: 100px;
+    margin-bottom: 1rem;
 
 }
 
@@ -226,4 +245,9 @@ footer .sociais:nth-child(3):hover {
 footer .sociais:nth-child(2):hover,
 footer .sociais:nth-child(4):hover {
     background: #0077b5;
+}
+
+footer i {
+    color: #333;
+    font-size: 0.875rem;
 }
