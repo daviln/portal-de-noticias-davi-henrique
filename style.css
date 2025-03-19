@@ -347,21 +347,30 @@ nav ul li a:hover {
     justify-content: center;
     padding: 50px;
     gap: 30px;
+    /* max-width: 1000px; */
 }
 
 section div img {
     width: 300px;
     border-radius: 12px;
+    margin: auto;
 }
 
 .edes-gisele h2, p {
     text-align: center;
+    margin: 20px 40px 0px 40px;
 }
 
 .edes-gisele {
     background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));
     border-radius: 12px;
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex: 1; */
+    max-width: 500px;
 
 }
 
@@ -475,11 +484,24 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    position: relative;
 }
 
-.imagem-footer {
-    width: 120px;
+.imagens-footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    position: absolute;
+}
+    
+.footer-esquerda i {
+    margin-top: 140px;
+}
 
+
+.imagens-footer img {
+    width: 120px;
+    margin: auto;
 }
 
 .links {
@@ -498,4 +520,9 @@ footer .sociais:nth-child(3):hover {
 footer .sociais:nth-child(2):hover,
 footer .sociais:nth-child(4):hover {
     background: #0077b5;
+}
+
+footer i {
+    color: #333;
+    font-size: 0.875rem;
 }
