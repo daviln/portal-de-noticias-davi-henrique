@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+
+}
+
+body {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));
+}
+
+.titulo-news {
+    font-size: 3.0em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-image: url("assets/back-titulo.png");
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.logo {
+    height: 100px;
+    margin-right: 10px;
+} 
+
+#subcabeçalho {
+    background: linear-gradient(135deg, rgb(70, 90, 150), rgb(100, 120, 180));
+    /* color: rgb(226, 225, 225); */
+    padding: 5px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(200, 220, 255); 
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    display: inline-block;
+    transition: color 0.5s ease, transform 0.5s ease;
+    padding: 3px;
+}
+
+nav ul li a:hover {
+    transform: scale(1.05);
+    text-decoration: wavy;
+}
+
+
+
+
+
+
+
+
+
+
+
+#redes {
+    /* background: linear-gradient(135deg, rgb(70, 90, 150), rgb(100, 120, 180)); */
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    margin: 50px 500px;
+    border-radius: 50px;
+
+}
+
+.sociais {
+    color: black;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2),
+                -2px -2px 5px rgb(125, 150, 159);
+    transition: 0.3s;
+    position: relative;
+    margin: 20px;
+}
+
+.sociais i {
+    color: black;
+    transition: 0.3s;
+}
+
+.sociais:hover {
+    transform: translateY(-5px);
+}
+
+.sociais:nth-child(1):hover {
+    background: #0077b5;
+}
+
+.sociais:nth-child(2):hover {
+    background: #25d366;
+}
+
+.sociais:nth-child(3):hover {
+    background: #e1306c;
+}
+
+.sociais:nth-child(4):hover {
+    background: #ea4335;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 70px;
+    /* background: black; */
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.sociais:hover .tooltip {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.sociais:hover .tooltip-linkedin {
+    background: #0077b5;
+}
+
+
+.sociais:hover .tooltip-whatsapp {
+    background: #25d366; 
+}
+
+
+.sociais:hover .tooltip-instagram {
+    background: #e1306c; 
+}
+
+
+.sociais:hover .tooltip-email {
+    background: #ea4335; 
+}
+
+footer {
+    background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-esquerda {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.imagem-footer {
+    width: 120px;
+
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+footer .sociais:nth-child(1):hover,
+footer .sociais:nth-child(3):hover {
+    background: #25d366;
+}
+
+footer .sociais:nth-child(2):hover,
+footer .sociais:nth-child(4):hover {
+    background: #0077b5;
+}
