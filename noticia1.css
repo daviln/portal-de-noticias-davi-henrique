@@ -42,7 +42,6 @@ header {
     background-size: cover;
     background-clip: text;
     color: transparent;
-    
 }
 
 .logo {
@@ -251,7 +250,7 @@ footer .sociais:nth-child(4):hover {
 }
 
 
-footer i {
+.footer-esquerda i {
     color: #333;
     font-size: 0.875rem;
 }
