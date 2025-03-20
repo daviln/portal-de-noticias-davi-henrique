@@ -49,10 +49,16 @@ header {
     margin-right: 10px;
 } 
 
+
+
 h1,h2,h3 {
     font-family: 'Merriweather',serif;
     font-weight: bold;
     color: #333;
+}
+
+.noticia h1 {
+    font-size:45px ;
 }
 
 p {
@@ -83,10 +89,12 @@ section, article {
 
 .imagem-principal img, .imagem-secundaria img, .imagem-futuro img {
     width: 100%;
+    height: 800px;
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba (0,0,0,0.1);
     margin-top: 1.5 rem;
     margin-bottom: 2rem;
+
 }
 
 .conteudo {
@@ -95,8 +103,8 @@ section, article {
     color: #444;
 }
 
-.conteudo h2 {
-    font-size: 1.75rem;
+.conteudo > h2 {
+    font-size: 36px;
     margin-top: 2rem;
     color: #333;
 }
