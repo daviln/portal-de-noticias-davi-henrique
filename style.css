@@ -44,7 +44,7 @@ header {
 
 #subcabeçalho {
     background: linear-gradient(135deg, rgb(70, 90, 150), rgb(100, 120, 180));
-    /* color: rgb(226, 225, 225); */
+    color: rgb(226, 225, 225);
     padding: 5px;
     position: fixed;
     top: 100px;
@@ -163,6 +163,9 @@ nav ul li a:hover {
     width: 380px;
     height: 500px;
     margin-bottom: 150px;
+    background-color: rgba(0, 0, 0, 0.345);
+    background-blend-mode: multiply;
+    color: whitesmoke;
 }
 
 #noticias a:nth-child(2) {
@@ -178,10 +181,13 @@ nav ul li a:hover {
     /* grid-row: 1/2;
     grid-column: 3/4; */
     background-image: url(./assets/noticia2.png);
-    background-position: center;
     background-size: cover;
     width: 400px;
     height: 300px;
+    background-color: rgba(0, 0, 0, 0.466);
+    background-blend-mode: multiply;
+
+
 }
 
 #noticias a:nth-child(3) {
@@ -195,7 +201,7 @@ nav ul li a:hover {
 
 
 #noticias a:nth-child(3) .conteudo-noticia {
-    background-image: url(./assets/noticia3.jpg);
+    background-image: url(./assets/encontrohubs.jpeg);
     /* grid-column: 3/4;
     grid-row: 2/4; */
     /* background-position: center; */
@@ -204,6 +210,8 @@ nav ul li a:hover {
     width: 450px;
     margin-bottom: 250px;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.466);
+    background-blend-mode: multiply;
 }
 
 .linkedin {
@@ -323,16 +331,25 @@ nav ul li a:hover {
 
 .titulo-noticia {
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
+    margin-right: 40px;
     left: 15px;
     font-size: 22px;
     font-weight: bold;
-}
+    /* background-color: rgb(90, 118, 180); */
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 8px;
+
+} 
 
 .descricao-noticia {
+    color: whitesmoke;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 8px;
     position: absolute;
     bottom: 20px;
-    left: -25px;
+    left: -30px;
     font-size: 14px;
 }
 
@@ -350,6 +367,14 @@ nav ul li a:hover {
 
 #startups-link {
     text-align: center;
+    /* margin-bottom: 10px; */
+    background: linear-gradient(135deg, rgb(233, 240, 255), rgb(189, 211, 255));
+    padding: 10px;
+    font-style: italic;
+    color: rgb(90, 118, 180);
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 12px;
 }
 
 
